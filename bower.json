@@ -1,0 +1,25 @@
+{
+  "name": "Zeta task",
+  "description": "Zeta task",
+  "main": "",
+  "authors": [
+    "Srinivasan <dhk.srini@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "animate.css": "^3.5.1",
+    "jquery": "^2.2.3"
+  },
+  "dependencies": {
+    "animate.css": "^3.5.2"
+  }
+}

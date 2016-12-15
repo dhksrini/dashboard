@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Zeta task</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="theme-color" content="#fb7040">
+    <meta name="msapplication-navbutton-color" content="#fb7040">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#fb7040">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="dev/css/global.css" rel="stylesheet">
+    <link href="dev/css/home.css" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <a class="compose-float" href="javascript: void(0);"><i class="">+</i></a>
+    <main class="container">
+        <header id="header">
+            <div class="nav-flex-header cover_full" style="background-image: url(dev/images/bg-compose.jpg);">
+                <div class="compose text-center z-index2">
+                    <a class="btn-normal" href="#!">Compose</a>
+                </div>
+            </div>
+            <div class="button" id="toggle">
+                <span class="top"></span>
+                <span class="middle_1"></span>
+                <span class="middle_2"></span>
+                <span class="bottom"></span>
+            </div>
+            <div class="overlay" id="overlay">
+                <nav class="navbar">
+                    <ul class="nav-list">
+                        <li><a class="active" href="#"><i class="fa fa-inbox"></i>Inbox <span class="badge">12</span></a></li>
+                        <li><a href="#"><i class="fa fa-heart"></i> Dearest</a></li>
+                        <li><a href="#"><i class="fa fa-paper-plane"></i> Sent</a></li>
+                        <li><a href="#"><i class="fa fa-align-center"></i> Draft <span class="badge">2</span></a></li>
+                        <li><a href="#"><i class="fa fa-trash-o"></i> Trash</a></li>
+                    </ul>
+                    <div class="divider margin-bottom-20 margin-top-20"></div>
+                    <div class="nav-list radio-labels">
+                        <div class="label-title">Labels<span class="pull-right text-bold">+</span></div>
+                        <div class="list-radio"><input type="radio" id="work" name="checkRadio"> <label for="work">Work</label></div>
+                        <div class="list-radio"><input type="radio" id="fashion" name="checkRadio"> <label for="fashion">Fashion</label></div>
+                        <div class="list-radio"><input type="radio" id="animals" name="checkRadio"> <label for="animals">Animals</label></div>
+                        <div class="list-radio"><input type="radio" id="code" name="checkRadio"> <label for="code">Code</label></div>
+                    </div>
+                    <div class="divider margin-bottom-20 margin-top-20"></div>
+                    <div class="nav-flex-profile" >
+                        <div class="userPro text-center">
+                            <span class="btn-rounded cover_full" style="background-image: url(dev/images/user.jpg);"></span>
+                            <span class="callActions rounded">
+                                <a class="dropdown-toggle" href="#!">
+                                    <i class="fa fa-chevron-down"></i>
+                                </a>
+                                <ul class="dropdown">
+                                    <li><a href="#">Profile</a></li>
+                                    <li><a href="#">Edit Account</a></li>
+                                    <li><a href="#">Sign out</a></li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="main-flex-wrapper">
+            <div class="two-column-layout search-wrp">
+                <div class="col-left-50">
+                    <h1>Inbox</h1>
+                </div>
+                <div class="col-right-50">
+                    <form class="searchForm">
+                        <div class="form-control">
+                            <input type="search" name="" value="" placeholder="Search here">
+                            <input type="submit" id="search">
+                            <label for="search"><i class="fa fa-search"></i></label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="two-column-layout margin-top-20 tab-topBar">
+                <div class="col-left-50">
+                    <div class="list-callaction">
+                        <div class="callActions rounded">
+                            <a href="#!"><i class="fa fa-reply"></i></a>
+                        </div>
+                        <div class="callActions rounded">
+                            <a href="#!"><i class="fa fa-heart"></i></a>
+                        </div>
+                        <div class="callActions rounded">
+                            <a href="#!"><i class="fa fa-trash-o"></i></a>
+                        </div>
+                        <div class="callActions rounded">
+                            <a href="#!" class="dropdown-toggle"><i class="fa fa-chevron-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">Edit Account</a></li>
+                                <li><a href="#">Sign out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-right-50 text-right">
+                    <div class="tab-panel" id="tab">
+                        <a href="#alphabetically">Alphabetically</a>
+                        <a href="#recent">Recent</a>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-action-list">
+                <div class="tab-wrapper">
+                    <ul>
+                        <li class="flex-list">
+                            <div class="flex-item">
+                                <span class="btn-rounded cover_full" style="background-image: url(dev/images/user.jpg);"></span>
+                                <span class="text-bold">Srinivasan</span>
+                            </div>
+                            <div class="flex-item">
+                                <label class="work-label label text-uppercase">Work</label><span>Product Expansion</span>
+                            </div>
+                            <div class="flex-item">
+                                <span class="text-bold">Today <strong>8:30 pm</strong></span>
+                            </div>
+                        </li>
+                        <li class="flex-list">
+                            <div class="flex-item">
+                                <span class="btn-rounded cover_full" style="background-image: url(http://ryanflorence.com/jsconf-avatars/avatars/ryan.jpg);"></span>
+                                <span class="text-bold">Srinivasan</span>
+                            </div>
+                            <div class="flex-item">
+                                <span>Product Expansion</span>
+                            </div>
+                            <div class="flex-item">
+                                <span class="text-bold">Today <strong>8:30 pm</strong></span>
+                            </div>
+                        </li>
+                        <li class="flex-list">
+                            <div class="flex-item">
+                                <span class="btn-rounded cover_full" style="background-image: url(http://ryanflorence.com/jsconf-avatars/avatars/michael.jpg);"></span>
+                                <span class="text-bold">Srinivasan</span>
+                            </div>
+                            <div class="flex-item">
+                                <label class="fashion-label label text-uppercase">fashion</label><span>Product Expansion</span>
+                            </div>
+                            <div class="flex-item">
+                                <span class="text-bold">Today <strong>8:30 pm</strong></span>
+                            </div>
+                        </li>
+                        <li class="flex-list">
+                            <div class="flex-item">
+                                <span class="btn-rounded cover_full" style="background-image: url(http://ryanflorence.com/jsconf-avatars/avatars/jeremy.jpg);"></span>
+                                <span class="text-bold">Srinivasan</span>
+                            </div>
+                            <div class="flex-item">
+                                <i class="fa fa-link"></i><span>Product Expansion</span>
+                            </div>
+                            <div class="flex-item">
+                                <span class="text-bold">Today <strong>8:30 pm</strong></span>
+                            </div>
+                        </li>
+                        <li class="flex-list">
+                            <div class="flex-item">
+                                <span class="btn-rounded cover_full" style="background-image: url(dev/images/user.jpg);"></span>
+                                <span class="text-bold">Srinivasan</span>
+                            </div>
+                            <div class="flex-item">
+                                <label class="work-label label text-uppercase">Work</label><span>Product Expansion</span>
+                            </div>
+                            <div class="flex-item">
+                                <span class="text-bold">Today <strong>8:30 pm</strong></span>
+                            </div>
+                        </li>
+                        <li class="flex-list">
+                            <div class="flex-item">
+                                <span class="btn-rounded cover_full" style="background-image: url(http://ryanflorence.com/jsconf-avatars/avatars/ryan.jpg);"></span>
+                                <span class="text-bold">Srinivasan</span>
+                            </div>
+                            <div class="flex-item">
+                                <span>Product Expansion</span>
+                            </div>
+                            <div class="flex-item">
+                                <span class="text-bold">Today <strong>8:30 pm</strong></span>
+                            </div>
+                        </li>
+                        <li class="flex-list">
+                            <div class="flex-item">
+                                <span class="btn-rounded cover_full" style="background-image: url(http://ryanflorence.com/jsconf-avatars/avatars/michael.jpg);"></span>
+                                <span class="text-bold">Srinivasan</span>
+                            </div>
+                            <div class="flex-item">
+                                <label class="fashion-label label text-uppercase">fashion</label><span>Product Expansion</span>
+                            </div>
+                            <div class="flex-item">
+                                <span class="text-bold">Today <strong>8:30 pm</strong></span>
+                            </div>
+                        </li>
+                        <li class="flex-list">
+                            <div class="flex-item">
+                                <span class="btn-rounded cover_full" style="background-image: url(http://ryanflorence.com/jsconf-avatars/avatars/jeremy.jpg);"></span>
+                                <span class="text-bold">Srinivasan</span>
+                            </div>
+                            <div class="flex-item">
+                                <i class="fa fa-link"></i><span>Product Expansion</span>
+                            </div>
+                            <div class="flex-item">
+                                <span class="text-bold">Today <strong>8:30 pm</strong></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="dev/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="dev/js/global.js"></script>
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+
+</html>
